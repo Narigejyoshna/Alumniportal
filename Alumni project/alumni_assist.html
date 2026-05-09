@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>ALUMNI ASSIST</title>
+    <style>
+        .search-container {
+            position: relative;
+            width: 300px;
+            margin: 0 auto;
+        }
+        .search-input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .search-button {
+            position:absolute ;
+            bottom: 2px;
+            right: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            font-size: 24px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .search-button:hover {
+            background-color: #0056b3;
+            body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+    }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .question-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .question-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .question-item h2 {
+            margin: 0;
+            font-size: 18px;
+            color: #333;
+        }
+        .question-item p {
+            margin: 5px 0 0;
+            color: #666;
+        }
+    </style>
+    </head>
+<body>
+    <h1><CENTER>ALUMNI ASSIST</CENTER></h1>
+    <div class="search-container">
+        <input type="text" class="search-input" id="searchInput" placeholder="Ask a question...">
+        <button class="search-button" onclick="performAction()">+</button>
+    </div>
+
+    <script>
+        function performAction() {
+            const query = document.getElementById('searchInput').value;
+            alert('You are asking a question: ' + query);
+            // Add your custom action here
+        }
+    </script>
+    <div class="container">
+        <h1>Asked Questions:</h1>
+        <ul class="question-list">
+            <li class="question-item">
+                <h3>How do you balance work and life?</h3>
+                <p><STRONG>Asked by: Chinmay</STRONG></p>
+                <p><STRONG>Answered by:YAMINI-MGIT2021</STRONG></p>
+                <p>1.Set Boundaries: Clearly define your working hours and stick to them. 
+                    Avoid checking work emails or taking calls outside of these hours<br>
+                    2.Prioritize Tasks: Use tools like to-do lists or digital planners to prioritize your tasks.
+                     Focus on the most important tasks first</p>
+            </li>
+            <li class="question-item">
+                <h3>What are the benefits of learning programming?</h3>
+                <p><STRONG>Asked by: Abhinay</STRONG></p>
+                <p><strong>Answered by: JYOSHNA-JNTU2018</strong></p>
+                <p>The study of programming languages aids in the development of the ability to express programming ideas.</p>
+            </li>
+            <li class="question-item">
+                <h2>What is the difference between front-end and back-end development?</h2>
+                <p><strong>Asked by: Sathwika</strong></p>
+                <p><strong>Answered by:HARSHA-CBIT2019</strong></p>
+                <p>Front-end devs use programming languages to bring the client side of a site to life. This development takes technical, creative, and communication skills.<br> Back-end developers use server-side programming languages to ensure that websites function properly.</p>
+            </li>
+        </div>
+</body>
+</html>
